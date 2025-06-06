@@ -1,0 +1,17 @@
+{{
+    config(
+        materialized='table'
+    )
+}}
+
+SELECT 
+    EXTRACT(MONTH FROM Start_Date) AS month,
+    COUNT(CASE WHEN EXTRACT(YEAR FROM Start_Date) = 2019 THEN 1 END) AS year_2019,
+    COUNT(CASE WHEN EXTRACT(YEAR FROM Start_Date) = 2020 THEN 1 END) AS year_2020,
+    COUNT(CASE WHEN EXTRACT(YEAR FROM Start_Date) = 2021 THEN 1 END) AS year_2021,
+    COUNT(CASE WHEN EXTRACT(YEAR FROM Start_Date) = 2022 THEN 1 END) AS year_2022,
+    COUNT(CASE WHEN EXTRACT(YEAR FROM Start_Date) = 2023 THEN 1 END) AS year_2023,
+    COUNT(CASE WHEN EXTRACT(YEAR FROM Start_Date) = 2024 THEN 1 END) AS year_2024
+FROM {{ ref('cycles_2019-2024') }}
+GROUP BY month
+ORDER BY month

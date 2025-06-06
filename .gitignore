@@ -5,3 +5,4 @@ terraform.tfstate*
 .ipynb_checkpoints
 .env
 .env_encoded
+logs

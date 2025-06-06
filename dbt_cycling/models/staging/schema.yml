@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: staging
+    database: "{{ env_var('DBT_DATABASE', 'boreal-quarter-455022-q5') }}"
+    schema:
+      "{{ env_var('DBT_SCHEMA', 'cycling_data_uk') }}"
+      # loaded_at_field: record_loaded_at
+    tables:
+      - name: cycling_2019
+      - name: cycling_2020
+      - name: cycling_2021
+      - name: cycling_2022
+      - name: cycling_2023
+      - name: cycling_2024

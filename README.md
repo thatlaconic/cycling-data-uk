@@ -81,10 +81,5 @@ export PYTHONPATH="${SPARK_HOME}/python/:$PYTHONPATH"
 export PYTHONPATH="${SPARK_HOME}/python/lib/py4j-0.10.9.7-src.zip:$PYTHONPATH"
 ```
 
-## Uploading parquet files in GCS
-```bash
-gsutil -m cp -r processed/2018/ gs://cycling_data_boreal-quarter-455022-q5/processed/2018
-```
-
 ## Installing Hadoop (GCS connector)
 gsutil cp gs://hadoop-lib/gcs/gcs-connector-hadoop3-2.2.5.jar gcs-connector-hadoop3-2.2.5.jar

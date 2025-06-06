@@ -103,7 +103,7 @@ def main():
     current_date = start_date
     
     while current_date <= end_date:
-        week_end = min(current_date + timedelta(days=6), end_date)
+        week_end = min(current_date + timedelta(days=16), end_date)
         date_range = f"{current_date.strftime('%d%b%Y')}-{week_end.strftime('%d%b%Y')}"
         
         for prefix in range(prefix_start, prefix_end + 1):
