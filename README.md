@@ -37,6 +37,7 @@ This project demonstrates a **modern data engineering pipeline** using:
 
 ## 2. Architecture Diagram  
 
+![](pipeline_diagram.png)
 
 
 ## 3. Technologies Used
