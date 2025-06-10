@@ -1,5 +1,20 @@
 # Cycling Trips Data Pipeline (Data Engineering)
 **A Comprehensive Report on Building an End-to-End Data Pipeline**  
+
+## Table of Contents
+- [Objective](#objective)
+- [About Dataset](#about-dataset)
+- [Overview](#1-overview)
+- [Architecture Diagram](#2-architecture-diagram)
+- [Technologies Used](#3-technologies-used)
+- [Preparing the Environment with Github Codespaces](#4-preparing-the-environment-with-github-codespaces)
+- [Step-by-Step Implementation](#5-step-by-step-implementation)
+- [ELT Pipeline in Bash Script](#6-elt-pipeline-in-bash-script)
+
+
+## Objective
+Efficiently move, transform, and manage data from various sources to destinations using Google Cloud Platform where it can be analyzed and utilized.
+
 ## About Dataset 
 + This dataset was obtained from [London Datastore/Cycling Infrastructure Database](
 https://cycling.data.tfl.gov.uk/)
@@ -9,8 +24,6 @@ https://cycling.data.tfl.gov.uk/)
 ### Description
 + London’s Cycling Infrastructure Database (CID) is the world’s largest and most comprehensive database of cycling infrastructure, containing comprehensive details of cycling infrastructure in the Capital. The CID is intended to address barriers to cycling by providing Londoners with clear and accurate information about cycling infrastructure, helping them plan cycle journeys with confidence. The CID is a core part of our Cycling Action Plan , which sets out how TfL, boroughs and others will work together to make London the world’s best big city for cycling.
 
-## Objective
-Efficiently move, transform, and manage data from various sources to destinations using Google Cloud Platform where it can be analyzed and utilized.
 
 ## 1. Overview  
 This project demonstrates a **modern data engineering pipeline** using:  
