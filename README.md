@@ -88,8 +88,6 @@ gcloud auth activate-service-account --key-file=/home/codespace/.config/gcloud/k
 
 # Verify authentication
 gcloud config list
-Troubleshooting
-cat shows nothing?
 ```
 **Check if the secret was loaded:**
 
@@ -186,7 +184,7 @@ dbt docs generate  # Generates data lineage
 ```
 **DBT graph**
 
-![](dbt_cycling/lineage_graph.PNG)
+![](dbt_cycling/lineage_graph/lineage_graph.PNG)
 
 ### 4.6 Looker Studio (Visualization)
 ![](Looker/cycling_dashboard.PNG)
